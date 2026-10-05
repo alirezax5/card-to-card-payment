@@ -1,0 +1,456 @@
+/**
+ * WooCommerce Card-to-Card Payment - frontend styles.
+ * Scoped under .ctp-* classes only. Mobile-first, RTL/LTR aware.
+ */
+
+.ctp-payment-wrapper {
+        box-sizing: border-box;
+        max-width: 640px;
+        margin: 1.5em 0;
+        padding: 1.25em;
+        background: #fff;
+        border: 1px solid #e2e4e7;
+        border-radius: 12px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        line-height: 1.6;
+}
+
+.ctp-payment-wrapper *,
+.ctp-payment-wrapper *::before,
+.ctp-payment-wrapper *::after {
+        box-sizing: inherit;
+}
+
+.ctp-payment-wrapper__title {
+        font-size: 1.25em;
+        margin: 0 0 0.75em;
+}
+
+/* Status */
+.ctp-status {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5em;
+        padding: 0.6em 0.9em;
+        border-radius: 8px;
+        margin: 0 0 1em;
+        font-weight: 500;
+}
+
+[dir="rtl"] .ctp-status {
+        flex-direction: row;
+}
+
+.ctp-status--waiting {
+        background: #fff8e6;
+        border: 1px solid #f0d47c;
+        color: #7a5b00;
+}
+
+.ctp-status--receipt_submitted {
+        background: #eef6ff;
+        border: 1px solid #9fc3e8;
+        color: #1d4f7c;
+}
+
+.ctp-status--verified {
+        background: #edfaf0;
+        border: 1px solid #8fd3a5;
+        color: #1d6a38;
+}
+
+.ctp-status--rejected {
+        background: #fdeeee;
+        border: 1px solid #e8a1a1;
+        color: #8a1f1f;
+}
+
+/* Amount */
+.ctp-amount {
+        font-size: 1.05em;
+        margin: 0 0 1em;
+}
+
+.ctp-amount__value {
+        font-size: 1.15em;
+}
+
+/* Instructions */
+.ctp-instructions {
+        margin: 0 0 1em;
+}
+
+.ctp-instructions p {
+        margin: 0 0 0.5em;
+}
+
+.ctp-manual-notice {
+        font-size: 0.92em;
+        color: #555;
+        border-inline-start: 3px solid #ccc;
+        padding-inline-start: 0.75em;
+        margin: 0 0 1.25em;
+}
+
+/* Cards */
+.ctp-cards {
+        display: grid;
+        gap: 0.9em;
+        margin: 0 0 1.25em;
+}
+
+.ctp-card {
+        padding: 1em 1.1em;
+        border: 1px dashed #c6c9cd;
+        border-radius: 10px;
+        background: #fafbfc;
+}
+
+.ctp-card__heading {
+        font-size: 0.85em;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #666;
+        margin-bottom: 0.35em;
+}
+
+.ctp-card__row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5em;
+}
+
+/* Card numbers always read LTR, even in an RTL page. */
+.ctp-card-number {
+        direction: ltr;
+        unicode-bidi: isolate;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.15em;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        word-break: keep-all;
+}
+
+.ctp-copy-button {
+        appearance: none;
+        border: 1px solid #2271b1;
+        background: #f0f6fc;
+        color: #2271b1;
+        border-radius: 6px;
+        padding: 0.3em 0.9em;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease;
+}
+
+.ctp-copy-button:hover,
+.ctp-copy-button:focus-visible {
+        background: #2271b1;
+        color: #fff;
+        outline: none;
+}
+
+.ctp-copy-feedback {
+        font-size: 0.85em;
+        color: #1d6a38;
+}
+
+.ctp-card__holder {
+        margin-top: 0.5em;
+        font-size: 0.95em;
+        color: #333;
+}
+
+.ctp-card__holder-label {
+        color: #666;
+}
+
+/* Rejection block */
+.ctp-rejection {
+        border: 1px solid #e8a1a1;
+        border-radius: 8px;
+        padding: 0.9em 1em;
+        margin: 0 0 1.25em;
+        background: #fdeeee;
+}
+
+.ctp-rejection__title {
+        font-weight: 700;
+        margin: 0 0 0.4em;
+}
+
+.ctp-rejection p {
+        margin: 0 0 0.3em;
+}
+
+.ctp-rejection__reason {
+        font-size: 0.95em;
+}
+
+/* No cards */
+.ctp-no-cards {
+        padding: 1em;
+        border: 1px solid #f0d47c;
+        background: #fff8e6;
+        border-radius: 8px;
+        margin-bottom: 1.25em;
+}
+
+/* Receipt display */
+.ctp-receipt__title {
+        font-size: 1.05em;
+        margin: 0 0 0.5em;
+}
+
+.ctp-receipt__figure {
+        margin: 0 0 1em;
+}
+
+.ctp-receipt__thumb {
+        display: block;
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+        border: 1px solid #e2e4e7;
+        border-radius: 8px;
+        background: #fff;
+}
+
+.ctp-receipt__meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75em;
+        margin-top: 0.5em;
+        font-size: 0.9em;
+        color: #555;
+}
+
+.ctp-receipt__meta a {
+        color: #2271b1;
+}
+
+/* Upload form */
+.ctp-receipt-upload {
+        border: 1px solid #e2e4e7;
+        border-radius: 10px;
+        padding: 1em 1.1em;
+        background: #fafbfc;
+        margin-top: 1em;
+}
+
+.ctp-receipt-upload__title {
+        font-size: 1.05em;
+        margin: 0 0 0.75em;
+}
+
+.ctp-receipt-upload__file-label {
+        display: inline-block;
+        border: 1px solid #2271b1;
+        color: #2271b1;
+        background: #fff;
+        padding: 0.45em 1.1em;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.95em;
+}
+
+.ctp-receipt-upload__file-label:hover,
+.ctp-file-input:focus-visible + .ctp-receipt-upload__file-label {
+        background: #f0f6fc;
+}
+
+.ctp-file-input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+}
+
+.ctp-file-input:focus-visible + .ctp-receipt-upload__file-label {
+        outline: 2px solid #2271b1;
+        outline-offset: 2px;
+}
+
+.ctp-file-hint {
+        font-size: 0.85em;
+        color: #666;
+        margin: 0.6em 0 0.2em;
+}
+
+.ctp-file-name {
+        font-size: 0.9em;
+        margin: 0 0 0.75em;
+        word-break: break-all;
+}
+
+.ctp-upload-button {
+        appearance: none;
+        border: none;
+        background: #2271b1;
+        color: #fff;
+        padding: 0.55em 1.4em;
+        border-radius: 6px;
+        font-size: 0.98em;
+        cursor: pointer;
+        transition: background 0.15s ease;
+}
+
+.ctp-upload-button:hover,
+.ctp-upload-button:focus-visible {
+        background: #135e96;
+        outline: none;
+}
+
+.ctp-upload-button[disabled] {
+        opacity: 0.6;
+        cursor: default;
+}
+
+.ctp-upload-feedback {
+        margin: 0.75em 0 0;
+        font-size: 0.95em;
+}
+
+.ctp-upload-feedback--success {
+        color: #1d6a38;
+}
+
+.ctp-upload-feedback--error {
+        color: #8a1f1f;
+}
+
+.ctp-verified-note {
+        color: #1d6a38;
+        font-weight: 600;
+}
+
+/* Dedicated payment page (/ctp-payment/{order_id}/) */
+.ctp-pay-page {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 1.5em 1em 3em;
+}
+
+.ctp-pay-page__title {
+        font-size: 1.5em;
+        line-height: 1.3;
+        margin: 0 0 1em;
+}
+
+.ctp-pay-page__notice {
+        background: #fff;
+        border: 1px solid #e2e4e7;
+        border-radius: 12px;
+        padding: 1.1em 1.25em;
+        margin: 0 0 1.25em;
+        color: #555;
+}
+
+.ctp-order-summary {
+        background: #fff;
+        border: 1px solid #e2e4e7;
+        border-radius: 12px;
+        padding: 1.1em 1.25em;
+        margin: 0 0 1.25em;
+        line-height: 1.6;
+}
+
+.ctp-order-summary__title {
+        font-size: 1.15em;
+        margin: 0 0 0.6em;
+}
+
+.ctp-order-summary__description {
+        margin: 0 0 0.9em;
+        color: #444;
+}
+
+.ctp-order-summary__description p:first-child {
+        margin-top: 0;
+}
+
+.ctp-order-summary__description p:last-child {
+        margin-bottom: 0;
+}
+
+.ctp-order-summary__number {
+        margin: 0 0 0.75em;
+        color: #333;
+}
+
+.ctp-order-summary__table {
+        width: 100%;
+        border-collapse: collapse;
+}
+
+.ctp-order-summary__table td {
+        padding: 0.5em 0;
+        border-bottom: 1px dashed #e2e4e7;
+        vertical-align: top;
+}
+
+.ctp-order-summary__table tr:last-child td {
+        border-bottom: none;
+}
+
+.ctp-order-summary__qty {
+        color: #666;
+        font-size: 0.9em;
+}
+
+.ctp-order-summary__total {
+        white-space: nowrap;
+        text-align: end;
+}
+
+.ctp-order-summary__grand td {
+        font-weight: 700;
+        border-top: 1px solid #e2e4e7;
+        border-bottom: none;
+}
+
+/* Post-upload "View order" (continue) link */
+.ctp-received-row {
+        margin: 1em 0 0;
+}
+
+.ctp-received-link {
+        display: inline-block;
+        background: #1d6a38;
+        color: #fff;
+        padding: 0.55em 1.5em;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.15s ease;
+}
+
+.ctp-received-link:hover,
+.ctp-received-link:focus-visible {
+        background: #155a2c;
+        color: #fff;
+}
+
+.ctp-received-link[hidden] {
+        display: none;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+        .ctp-payment-wrapper {
+                padding: 1em;
+        }
+
+        .ctp-card-number {
+                font-size: 1.02em;
+        }
+
+        .ctp-card__row {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 0.35em;
+        }
+}

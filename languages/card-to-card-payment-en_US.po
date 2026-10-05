@@ -1,0 +1,548 @@
+# card-to-card-payment translation — en_US.
+# Copyright (C) 2026 Card-to-Card Payment Team
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: card-to-card-payment 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com/plugins/card-to-card-payment/\n"
+"POT-Creation-Date: 2026-09-03 12:00+0000\n"
+"PO-Revision-Date: 2026-09-03 12:00+0000\n"
+"Last-Translator: English Translation Team\n"
+"Language-Team: English Translation Team\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: card-to-card-payment\n"
+"X-Note: English (source language)\n"
+
+#. Plugin context: file size
+#: includes/class-gateway.php
+msgctxt "file size"
+msgid "%d MB"
+msgstr ""
+
+#: includes/class-admin.php, includes/class-order.php
+msgid "(no reason given)"
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "A receipt for this order has already been verified. Please contact the store if you need to change it."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Add as many bank cards as you need. Only enabled cards are shown to customers. Drag a card (or use the arrows) to change the display order."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Add card"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Allowed formats: %1$s. Maximum size: %2$s."
+msgstr ""
+
+#: includes/class-order.php
+msgid "Amount payable:"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Bank Cards"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Card holder:"
+msgstr ""
+
+#: includes/class-admin.php, includes/class-gateway.php, includes/class-order.php
+msgid "Card number"
+msgstr ""
+
+#: includes/class-admin.php, includes/class-blocks-integration.php, includes/class-gateway.php
+msgid "Card-to-Card Payment"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Card-to-Card Payment Information"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Card-to-Card payment receipt approved and payment verified."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "Card-to-Card payment receipt submitted. Waiting for verification."
+msgstr ""
+
+#: includes/class-order.php
+msgid "Card-to-Card payment receipt was rejected by %1$s. Reason: %2$s"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Card-to-Card payment selected. Waiting for payment receipt."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Card-to-Card Status"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Choose file"
+msgstr ""
+
+#: includes/class-pay-page.php
+msgid "Complete your card-to-card payment"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Configure cards"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Confirm rejection"
+msgstr ""
+
+#: includes/class-plugin.php
+msgid "Copied!"
+msgstr ""
+
+#: includes/class-order.php, includes/class-plugin.php
+msgid "Copy"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Copy card number"
+msgstr ""
+
+#: includes/class-plugin.php
+msgid "Copying failed. Please copy the number manually."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Debug logging"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Description"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Disabled"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Done. Reloading…"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Drag to reorder"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Enable card-to-card payment"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/class-admin.php, includes/class-gateway.php
+msgid "Enabled"
+msgstr ""
+
+#: includes/class-admin.php, includes/class-gateway.php
+msgid "First name"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Gateway settings saved with %d card(s)."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Heading shown on the dedicated payment page, above the order summary. Leave empty to hide the heading."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Intro text shown on the dedicated payment page, above the order summary. Basic HTML allowed. Leave empty to show no description."
+msgstr ""
+
+#: includes/class-admin.php, includes/class-gateway.php
+msgid "Last name"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Log gateway events (never logs card numbers or receipt contents)"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Manual bank card-to-card payment. The customer transfers the order total to one of your bank cards and uploads the payment receipt; you verify the payment manually."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Maximum allowed size of the uploaded payment receipt file. Default: 5 MB."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Maximum receipt file size (MB)"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Move card down"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Move card up"
+msgstr ""
+
+#: includes/class-order.php
+msgid "No active cards are configured. Please contact the store to complete your payment."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "No cards yet. Click the Add card button below to create your first card."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "No receipt has been uploaded yet."
+msgstr ""
+
+#: includes/class-pay-page.php
+msgid "Order number:"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Order summary"
+msgstr ""
+
+#: includes/class-pay-page.php
+msgid "Order total:"
+msgstr ""
+
+#: includes/class-blocks-integration.php, includes/class-gateway.php
+msgid "Pay by transferring the order total to one of our bank cards (card-to-card), then upload your payment receipt for manual verification."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Payment error: the order could not be found. Please try again."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Payment Instructions"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Payment method title shown to customers at checkout."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Payment page description"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Payment page heading"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Payment Receipt"
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "Payment receipt for order %s"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Payment receipt thumbnail"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Payment Receipt:"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Payment Status:"
+msgstr ""
+
+#: includes/class-meta.php
+msgid "Payment verified"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Payment verified."
+msgstr ""
+
+#: includes/class-plugin.php, includes/class-receipt.php
+msgid "Please choose a file first."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Please enter the rejection reason shown to the customer."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Please transfer the order total to one of the cards below, then upload your payment receipt. Your order will be processed after the store admin verifies your payment."
+msgstr ""
+
+#: includes/class-order.php
+msgid "Please upload a new receipt below."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Receipt history: %d previous receipt(s) are preserved on this order."
+msgstr ""
+
+#: includes/class-meta.php
+msgid "Receipt rejected"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Receipt rejected."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Receipt removed."
+msgstr ""
+
+#: includes/class-meta.php
+msgid "Receipt submitted and awaiting review"
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "Receipt uploaded successfully."
+msgstr ""
+
+#: includes/class-plugin.php
+msgid "Redirecting to your order…"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Reject Receipt"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Reject receipt"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Rejected on:"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Rejected:"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Rejection reason (shown to the customer):"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Rejection reason:"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Remove"
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Remove card"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Remove Receipt"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Remove this card?"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Remove this receipt? The order will return to waiting for a new receipt."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Saved."
+msgstr ""
+
+#: includes/class-admin.php, includes/class-receipt.php
+msgid "Security check failed. Please refresh the page and try again."
+msgstr ""
+
+#: includes/class-plugin.php
+msgid "Selected file:"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Status:"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Submit new receipt"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Submit receipt"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "The action failed. Please refresh the page and try again."
+msgstr ""
+
+#: includes/class-order.php
+msgid "The card-to-card payment receipt was removed by the store admin. Waiting for a new receipt."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "The file content does not match an allowed image type. Please upload a real JPG, JPEG, PNG or WEBP image."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "The file was only partially uploaded. Please try again."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "The gateway is enabled but no card has been configured yet. Customers cannot pay until you add at least one enabled card."
+msgstr ""
+
+#: includes/class-admin.php, includes/class-receipt.php
+msgid "The order could not be found."
+msgstr ""
+
+#: includes/class-order.php
+msgid "The previous receipt was rejected."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "The receipt could not be stored. Please try again."
+msgstr ""
+
+#: includes/class-pay-page.php
+msgid "The requested page could not be found."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "The requested receipt could not be found."
+msgstr ""
+
+#: includes/class-plugin.php
+msgid "The selected file is too large."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "The uploaded file is too large. Maximum allowed size: %s."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "This file is not a valid image. Please upload a JPG, JPEG, PNG or WEBP image."
+msgstr ""
+
+#: includes/class-plugin.php, includes/class-receipt.php
+msgid "This file type is not allowed. Please upload a JPG, JPEG, PNG or WEBP image."
+msgstr ""
+
+#: includes/class-admin.php, includes/class-receipt.php
+msgid "This order does not use card-to-card payment."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "This payment has already been verified."
+msgstr ""
+
+#: includes/class-gateway.php
+msgid "Title"
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "Too many receipts have been uploaded for this order. Please contact the store to complete the verification."
+msgstr ""
+
+#: includes/class-order.php
+msgid "Upload a new payment receipt"
+msgstr ""
+
+#: includes/class-plugin.php, includes/class-receipt.php
+msgid "Upload failed. Please try again."
+msgstr ""
+
+#: includes/class-order.php
+msgid "Upload your payment receipt"
+msgstr ""
+
+#: includes/class-order.php, includes/class-plugin.php
+msgid "Uploaded payment receipt"
+msgstr ""
+
+#: includes/class-order.php, includes/class-plugin.php
+msgid "Uploaded:"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Uploaded: %s"
+msgstr ""
+
+#: includes/class-plugin.php
+msgid "Uploading…"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Verified on %1$s by %2$s."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Verify Payment"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Verify this card-to-card payment and mark the order as paid?"
+msgstr ""
+
+#: includes/class-admin.php, includes/class-order.php, includes/class-plugin.php
+msgid "View full size"
+msgstr ""
+
+#: includes/class-order.php
+msgid "View order"
+msgstr ""
+
+#: includes/class-meta.php
+msgid "Waiting for payment"
+msgstr ""
+
+#: includes/class-admin.php
+msgid "Warning: card numbers usually have 16 digits."
+msgstr ""
+
+#: card-to-card-payment.php
+msgid "WooCommerce Card-to-Card Payment requires <a href=\"%s\">WooCommerce</a> to be installed and activated. The payment gateway was not loaded."
+msgstr ""
+
+#: card-to-card-payment.php
+msgid "WooCommerce Card-to-Card Payment requires WooCommerce %s or newer. Please update WooCommerce."
+msgstr ""
+
+#: includes/class-admin.php
+msgid "You are not allowed to perform this action."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "You are not allowed to upload a receipt for this order."
+msgstr ""
+
+#: includes/class-pay-page.php
+msgid "You are not allowed to view this payment page."
+msgstr ""
+
+#: includes/class-receipt.php
+msgid "You are not allowed to view this receipt."
+msgstr ""
+
+#: includes/class-order.php
+msgid "Your payment has been verified. Thank you!"
+msgstr ""
+
+#: includes/class-order.php
+msgid "Your payment is verified manually by the store after you upload the receipt. The order is not processed automatically."
+msgstr ""
